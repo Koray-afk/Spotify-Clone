@@ -11,7 +11,7 @@ function formatTime(seconds) {
 }
 
 async function copyHTMLFromURL(hehe) {
-    let response = await fetch(`http://127.0.0.1:5500/songs/${hehe}/`);
+    let response = await fetch(`https://myfreemusic.vercel.app/songs/${hehe}/`);
     
     if (!response.ok) {
         throw new Error(`HTTP Error! Status: ${response.status}`);
